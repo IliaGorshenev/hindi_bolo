@@ -59,7 +59,7 @@ const HindiAlphabetAnimation: React.FC = () => {
       setCurrentLetterIndex(
         (prevIndex) => (prevIndex + 1) % hindiAlphabet.length
       );
-    }, 900); // Change letter every 1 second
+    }, 600); // Change letter every 1 second
 
     return () => clearInterval(interval);
   }, []);
