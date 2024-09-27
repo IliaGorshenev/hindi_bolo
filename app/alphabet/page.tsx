@@ -1,7 +1,16 @@
 import Script from "next/script";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Alphabet: React.FC = () => {
+  useEffect(() => {
+    const lottiePlayer = document.getElementById("lottiePlayer");
+    if (lottiePlayer !== null) {
+      lottiePlayer.addEventListener("complete", () => {
+        lottiePlayer.style.display = "none";
+      });
+    }
+  });
+
   return (
     <>
       <div>
@@ -11,10 +20,11 @@ const Alphabet: React.FC = () => {
           type="module"
         />
         <dotlottie-player
+          id="lottiePlayer"
           autoplay
           src="https://lottie.host/f11d4391-2afb-4c1c-a917-6ef3beedce21/QPxW70TFdZ.json"
           style={{ width: "auto", height: "100%" }}
-        />
+        ></dotlottie-player>
       </div>
     </>
   );
