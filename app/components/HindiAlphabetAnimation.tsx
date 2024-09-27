@@ -202,7 +202,7 @@ const HindiAlphabetAnimation: React.FC = () => {
         height: "100vh",
       }}
     >
-      <span style={{ fontSize: "10rem" }}>
+      <span style={{ fontSize: "2rem" }}>
         {hindiAlphabet[currentLetterIndex]}
       </span>
     </div>
