@@ -188,7 +188,7 @@ const HindiAlphabetAnimation: React.FC = () => {
       setCurrentLetterIndex(
         (prevIndex) => (prevIndex + 1) % hindiAlphabet.length
       );
-    }, 4000); // Change letter every 1 second
+    }, 7000); // Change letter every 1 second
 
     return () => clearInterval(interval);
   }, []);
