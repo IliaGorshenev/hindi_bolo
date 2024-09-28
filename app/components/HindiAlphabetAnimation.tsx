@@ -258,7 +258,7 @@ const HindiAlphabetAnimation: React.FC = () => {
       <span style={{ fontSize: "2rem", marginRight: "10px" }}>
         {hindiAlphabet[currentLetterIndex]}
       </span>
-      <ul style={{ display: "flex" }}>
+      <ul style={{ display: "flex", flexDirection: 'column' }}>
         {hindiAlphabet.map((el, index) => (
           <li style={{ fontSize: "2rem" }} key={index}>
             {el}
