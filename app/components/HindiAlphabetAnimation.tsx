@@ -302,13 +302,20 @@ const HindiAlphabetAnimation: React.FC = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
         height: "100vh",
-        padding: "20px",
+        padding: "15% 20px",
       }}
     >
-      <span style={{ fontSize: "2rem", flexGrow: "2", marginBottom: "20px" }}>
+      <span
+        style={{
+          fontSize: "2rem",
+          flexGrow: "2",
+          marginBottom: "20px",
+          height: "300px",
+        }}
+      >
         {hindiAlphabet[currentLetterIndex]}
       </span>
       <ul style={{ display: "flex", flexDirection: "column" }}>
